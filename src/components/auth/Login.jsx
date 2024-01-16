@@ -1,4 +1,4 @@
-// Login.js
+// src/components/auth/Login.js
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/login", {
+      const response = await axios.post("https://backend-d2yb.onrender.com/login", {
         email,
         password,
       });

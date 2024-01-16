@@ -1,4 +1,4 @@
-// Signup.js
+// src/components/auth/Signup.js
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ const Signup = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/signup", {
+      const response = await axios.post("https://backend-d2yb.onrender.com/signup", {
         fullname,
         email,
         password,
