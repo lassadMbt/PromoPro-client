@@ -1,0 +1,23 @@
+.scroll-to-top {
+  /* General styles (adjust as needed) */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: none;
+  border-radius: 50%; /* Example for a circular button */
+  padding: 10px;
+  cursor: pointer;
+  background-color: #007bff; /* Adjust as needed */
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+
+  /* Icon styles */
+  font-size: 1.5rem;
+}
+
+.scroll-to-top.visible {
+  display: block;
+  opacity: 1;
+}
